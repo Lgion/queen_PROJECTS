@@ -1,0 +1,9 @@
+nohup: les entrées sont ignorées
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+
+[90m[main 2024-10-05T08:30:28.023Z][0m update#setState disabled
+[90m[main 2024-10-05T08:30:28.047Z][0m update#ctor - updates are disabled as there is no update URL
+[91m[main 2024-10-05T08:30:28.178Z][0m [storage state.vscdb] error checking size of src.vs.platform.reactivestorage.browser.reactiveStorageServiceImpl.persistentStorage.workspaceUser: Error: Unexpected number of rows - 0
+[91m[main 2024-10-05T08:30:31.703Z][0m vscode-file: Refused to load resource /tmp/.mount_cursorzZdbxS/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/tmp/.mount_cursorzZdbxS/resources/app/extensions/theme-seti/icons/seti.woff)
+[19829:1005/103526.617839:ERROR:atom_cache.cc(229)] Add code/file-list to kAtomsToCache
+[19829:1005/103844.917440:ERROR:atom_cache.cc(229)] Add chromium/from-privileged to kAtomsToCache
