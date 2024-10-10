@@ -1,0 +1,27 @@
+body{
+    background-color: red;
+
+
+    >header{
+        @apply container;
+        @apply mx-auto;
+        @apply px-4;
+        @apply py-8;
+        >h1{
+            @apply text-4xl;
+            @apply font-bold;
+            @apply mb-8;
+            @apply text-center;
+        }
+        >p{
+            @apply text-xl;
+            @apply text-center;
+            @apply mb-12;
+        }
+        >ul{
+            >li{
+                
+            }
+        }
+    }
+}
