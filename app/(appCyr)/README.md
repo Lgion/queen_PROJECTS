@@ -1,0 +1,3 @@
+# CONVERSATION AVEC GEMENI POUR TEMPLATES
+## DÉFINIR UNE APPLICATION WAEB
+https://gemini.google.com/app/5a2c51c90dddd1a1?hl=fr

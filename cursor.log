@@ -1,9 +1,10 @@
 nohup: les entrées sont ignorées
 MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
 
-[90m[main 2024-10-05T08:30:28.023Z][0m update#setState disabled
-[90m[main 2024-10-05T08:30:28.047Z][0m update#ctor - updates are disabled as there is no update URL
-[91m[main 2024-10-05T08:30:28.178Z][0m [storage state.vscdb] error checking size of src.vs.platform.reactivestorage.browser.reactiveStorageServiceImpl.persistentStorage.workspaceUser: Error: Unexpected number of rows - 0
-[91m[main 2024-10-05T08:30:31.703Z][0m vscode-file: Refused to load resource /tmp/.mount_cursorzZdbxS/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/tmp/.mount_cursorzZdbxS/resources/app/extensions/theme-seti/icons/seti.woff)
-[19829:1005/103526.617839:ERROR:atom_cache.cc(229)] Add code/file-list to kAtomsToCache
-[19829:1005/103844.917440:ERROR:atom_cache.cc(229)] Add chromium/from-privileged to kAtomsToCache
+[90m[main 2024-10-17T08:46:04.193Z][0m update#setState disabled
+[90m[main 2024-10-17T08:46:04.244Z][0m update#ctor - updates are disabled as there is no update URL
+[91m[main 2024-10-17T08:46:04.413Z][0m [storage state.vscdb] error checking size of src.vs.platform.reactivestorage.browser.reactiveStorageServiceImpl.persistentStorage.workspaceUser: Error: Unexpected number of rows - 0
+[91m[main 2024-10-17T08:46:04.413Z][0m [storage state.vscdb] error checking size of workbench.panel.aichat.view.aichat.chatdata: Error: Unexpected number of rows - 0
+[91m[main 2024-10-17T08:46:08.934Z][0m vscode-file: Refused to load resource /tmp/.mount_cursorneNlQl/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/tmp/.mount_cursorneNlQl/resources/app/extensions/theme-seti/icons/seti.woff)
+[64001:1017/112601.098682:ERROR:atom_cache.cc(229)] Add code/file-list to kAtomsToCache
+[90m[main 2024-10-17T10:04:26.614Z][0m Extension host with pid 64334 exited with code: 0, signal: unknown.

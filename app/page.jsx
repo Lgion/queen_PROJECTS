@@ -7,8 +7,17 @@ export default function Home() {
                 <Link href={`/templates`} passHref>
                     Yanis
                 </Link>
+                <Link href={`/yanis0`} passHref>
+                    Yanis Game Loby Templates I
+                </Link>
+                <Link href={`/yanis1`} passHref>
+                    Yanis Game Loby Templates II
+                </Link>
                 <Link href={`/workouts`} passHref>
                     Cyrille
+                </Link>
+                <Link href={`/cyr0`} passHref>
+                    Cyrille  Game Loby Templates I
                 </Link>
             
         </body>

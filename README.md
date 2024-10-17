@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CONVERSATION AVEC GEMENI POUR TEMPLATES
+##  OÙ TROUVER DES COMPOSANTS WEB HTML5?  
+https://gemini.google.com/app/dda7e2c8f969eb75?hl=fr
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# BRAINSTORMING ON: "Rassembler les sujets/keywords/etc pour une IA qui crée des templates"
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 0. AUTRES PERSPECTIVE
+- Fonctionnalités:
+- Design et Ergonomie:
+- Technologies Back-End (à définir selon vos besoins et préférences):
+- Outils de développement:
+- Hébergement:
+- Sécurité:
+- Performance:
+---
+- L'identité du salon
+- L'ambiance souhaitée
+- Les valeurs à véhiculer
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## 1. Trouver des exemples de templates
+https://www.figma.com/community/file/1267688208388308864
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 2. Définir les mots clés
+### (STACK) TECHNIQUE: 
+- framework css: (TAILWIND, BOOTSTRAP, etc)
+- framework frontend/js: (REACT, VUE, etc)
+- framework backend/js: (NODE, EXPRESS, etc)
+- routes API:
+- bdd: 
+- nom de domaine suggéré
+### GENERAL
+- selection de sites/applications similaires: 
+- lien mockup: 
+- lien logo: 
+- slogan: 
+- couleurs: 
+- effets visuels: 
+- typos: 
+- images 
+- vidéos 
+- cibles: (ENFANT, ADOS, etc)
+- éléments de décoration: (parallax, 3D motion, décoration thématique(noel,holydays,...))
+- type de site/application: (VITRINE, MULTI PAGE, ECOMMERCE, etc)
+- objectif de la page/ application: (VENTE, MARKETING, etc)
+- catégorie sociaux-professionnelle: (GAMING, SPORT, etc)
+- catégorie thématique: (NOEL, ST PATRICK, etc)
+- descrition visuelle par mot-clé: (NÉON, cyberpunk, rétro, LGBTQ+, etc)
+- liste actions: (LIKE, SHARE, créer un compte, se connecter, rechercher des informations, publier du contenu, interagir avec d'autres utilisateurs, etc)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 3. Définir les mots clés
+
