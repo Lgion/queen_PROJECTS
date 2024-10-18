@@ -71,7 +71,7 @@ function App() {
       </header>
 
       <main className="home">
-        <ListCards $data={$data.mainHome} setter={set$data} />
+        <ListCards $={$data.mainHome} setter={set$data} dataId="mainHome" />
       </main>
 
       <footer className="bg-gray-800 text-white py-8">
