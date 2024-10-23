@@ -124,7 +124,7 @@ export function HeadersDoubleSimple({children,bem="B5-Headers",align=""}) {
         </header>
     </>
 }
-export function HeadersDoubleIcons({children,bem="B5-Headers",align=""}) {
+export function HeadersDoubleIcons({children,bem="B5-Headers",align="",$datas}) {
     const blockRef = useRef()
 
     useEffect(() => {
@@ -133,7 +133,7 @@ export function HeadersDoubleIcons({children,bem="B5-Headers",align=""}) {
     return <>
         <header ref={blockRef} className={bem+' '+align+' --doubleHeader'}>
             <Logo01 />
-            <NavLinks02Icons />
+            <NavLinks02Icons links={$datas?.links||undefined} />
             <nav>
                 <SearchBox />
                 <LogSignInOut /> 

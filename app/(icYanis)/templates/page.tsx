@@ -21,7 +21,7 @@ export default () => <main className='grid grid-cols-1 md:grid-cols-2 lg:grid-co
                 <p>{template.description}</p>
             </CardContent>
             <CardFooter className="mt-auto">
-                <Link href={`/template/${template.id}`} passHref>
+                <Link href={`/templates/template/${template.id}`} passHref>
                     <Button>Voir le modèle</Button>
                 </Link>
             </CardFooter>
