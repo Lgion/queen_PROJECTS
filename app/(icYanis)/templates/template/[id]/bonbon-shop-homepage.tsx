@@ -5,7 +5,7 @@ import { Candy, Gift, Truck } from "lucide-react"
 export function BonbonShopHomepage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-primary text-primary-foreground py-4">
+      <header className="bg-primaryy text-primaryy-foreground py-4">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">Le Paradis des Bonbons</h1>
           <nav>
@@ -54,7 +54,7 @@ export function BonbonShopHomepage() {
                 { icon: Truck, title: 'Livraison Rapide', description: 'Recevez vos bonbons en un temps record' }
               ].map((item, index) => (
                 <div key={index} className="flex flex-col items-center text-center">
-                  <item.icon className="w-12 h-12 mb-4 text-primary" />
+                  <item.icon className="w-12 h-12 mb-4 text-primaryy" />
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <p className="text-muted-foreground">{item.description}</p>
                 </div>
@@ -64,7 +64,7 @@ export function BonbonShopHomepage() {
         </section>
       </main>
 
-      <footer className="bg-primary text-primary-foreground py-8">
+      <footer className="bg-primaryy text-primaryy-foreground py-8">
         <div className="container mx-auto text-center">
           <p className="mb-2">Le Paradis des Bonbons - Votre destination sucrée</p>
           <p className="mb-2">123 Rue des Sucreries, 75000 Paris</p>

@@ -45,7 +45,7 @@ export default function RootLayout({
 
       {children}
         
-      <footer>footer</footer>
+      <footer>footedddr</footer>
     </body>
   );
 }

@@ -12,6 +12,10 @@ const config: Config = {
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
+			backgroundd: {
+			DEFAULT: '#111827', // gray-900
+			light: '#1F2937', // gray-800
+			},
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -23,6 +27,10 @@ const config: Config = {
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
   				foreground: 'hsl(var(--primary-foreground))'
+  			},
+  			primaryy: {
+				DEFAULT: '#10B981', // emerald-500
+				hover: '#059669', // emerald-600
   			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
@@ -56,7 +64,11 @@ const config: Config = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		}
-  	}
+  	}, 
+	fontFamily: {
+		'roboto': ['Roboto', 'sans-serif'],
+		'orbitron': ['Orbitron', 'sans-serif'],
+	},
   },
   plugins: [require("tailwindcss-animate")],
 };
