@@ -1,0 +1,272 @@
+[
+    {
+        "nom": " Artisans",
+        "score": 18000000.0,
+        "secteur": "Commerce et Services"
+    },
+    {
+        "nom": " Commerçants et assimilés",
+        "score": 18000000.0,
+        "secteur": "Commerce et Services"
+    },
+    {
+        "nom": " Chefs d'entreprise de 10 salariés ou plus",
+        "score": 18000000.0,
+        "secteur": "Commerce et Services"
+    },
+    {
+        "nom": " Professions de la santé",
+        "score": 8000000.0,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Cadres administratifs et commerciaux d'entreprise",
+        "score": 8000000.0,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Professions intermédiaires de la santé et du travail social",
+        "score": 8000000.0,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Professions intermédiaires administratives et commerciales des entreprises",
+        "score": 8000000.0,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Employés administratifs d'entreprise",
+        "score": 8000000.0,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Anciens artisans, commerçants, chefs d'entreprise",
+        "score": 8000000.0,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Professions libérales",
+        "score": 4800000.0,
+        "secteur": "Professions libérales et artistiques"
+    },
+    {
+        "nom": " Agriculteurs sur petite exploitation",
+        "score": 1999999.9999999995,
+        "secteur": "Agriculture"
+    },
+    {
+        "nom": " Agriculteurs sur moyenne exploitation",
+        "score": 1999999.9999999995,
+        "secteur": "Agriculture"
+    },
+    {
+        "nom": " Agriculteurs sur grande exploitation",
+        "score": 1999999.9999999995,
+        "secteur": "Agriculture"
+    },
+    {
+        "nom": " Éleveurs, aquaculteurs salariés",
+        "score": 1999999.9999999995,
+        "secteur": "Agriculture"
+    },
+    {
+        "nom": " Ouvriers agricoles",
+        "score": 1999999.9999999995,
+        "secteur": "Agriculture"
+    },
+    {
+        "nom": " Bûcherons, sylviculteurs",
+        "score": 1999999.9999999995,
+        "secteur": "Agriculture"
+    },
+    {
+        "nom": " Pêcheurs, aquaculteurs indépendants",
+        "score": 1999999.9999999995,
+        "secteur": "Agriculture"
+    },
+    {
+        "nom": " Ingénieurs de l'industrie et du BTP",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Ingénieurs en informatique",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Ingénieurs de l'agriculture, de l'élevage, de la sylviculture et de la pêche",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Architectes, ingénieurs en urbanisme et en aménagement du territoire",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Professeurs, professions scientifiques",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Cadres de la fonction publique, professions juridiques et financières",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Professions de l'information, des arts et des spectacles",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Professions intermédiaires administratives de la fonction publique",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Techniciens",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Employés de la fonction publique",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Policiers et militaires",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Secrétaires",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Employés de commerce",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Personnels des services directs aux particuliers",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Ouvriers qualifiés de l'industrie et du BTP",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Ouvriers qualifiés de la manutention, du magasinage et du transport",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Chauffeurs",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Ouvriers non qualifiés de l'industrie et du BTP",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Ouvriers non qualifiés de la manutention, du magasinage et du transport",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Ouvriers non qualifiés des autres secteurs",
+        "score": 1999999.9999999995,
+        "secteur": "Industrie et BTP"
+    },
+    {
+        "nom": " Salariés agricoles",
+        "score": 1999999.9999999995,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Ouvriers agricoles",
+        "score": 1999999.9999999995,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Marins",
+        "score": 1999999.9999999995,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Militaires du rang",
+        "score": 1999999.9999999995,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Retraités agricoles",
+        "score": 1999999.9999999995,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Anciens cadres et professions intellectuelles supérieures",
+        "score": 1999999.9999999995,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Anciennes professions intermédiaires",
+        "score": 1999999.9999999995,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Anciens employés",
+        "score": 1999999.9999999995,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Anciens ouvriers",
+        "score": 1999999.9999999995,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Anciens militaires (hors officiers)",
+        "score": 1999999.9999999995,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Chômeurs n'ayant jamais travaillé",
+        "score": 1999999.9999999995,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Chômeurs ayant déjà travaillé",
+        "score": 1999999.9999999995,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Élèves, étudiants",
+        "score": 1999999.9999999995,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Personnes diverses sans activité professionnelle de moins de 60 ans",
+        "score": 1999999.9999999995,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Personnes diverses sans activité professionnelle de 60 ans et plus",
+        "score": 1999999.9999999995,
+        "secteur": "Autres"
+    },
+    {
+        "nom": " Professions artistiques",
+        "score": 1199999.9999999998,
+        "secteur": "Professions libérales et artistiques"
+    },
+    {
+        "nom": " Sportifs professionnels",
+        "score": 1199999.9999999998,
+        "secteur": "Professions libérales et artistiques"
+    }
+]
