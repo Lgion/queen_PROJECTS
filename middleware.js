@@ -15,6 +15,7 @@ export default authMiddleware({publicRoutes: [
       ,"/cyr0"
       ,"/cyr0/(.*)"
       ,"/header(.)"
+      ,"/api/logo"
 ]});
  
 export const config = {

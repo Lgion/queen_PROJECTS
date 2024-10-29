@@ -1,15 +1,9 @@
 import Link from 'next/link';
 import { 
   Menu, X, MapPin, MessageCircle, Phone,
-  Scissors, Users, Calendar, Image, Star, Mail, Home
+  Users, Calendar, Image, Star, Mail, Home
 } from 'lucide-react';
-
-const Logo = () => (
-  <div>
-    <Scissors />
-    <span>L'Atelier</span>
-  </div>
-);
+import Logo from './Logo';
 
 const NotificationBar = ({hasNotification, setHasNotification}: {
   hasNotification: boolean,

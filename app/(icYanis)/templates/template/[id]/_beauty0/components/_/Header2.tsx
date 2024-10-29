@@ -14,6 +14,8 @@ import {
   HamburgerButton,
   MobileMenu
 } from './header2Components';
+import { Rotate3DAnimation } from './Logo/animations';
+import { ScissorsRotation, GravityParticles, Spirograph, ConcentricWaves, Kaleidoscope, MatrixRain } from './Logo/canvas';
 
 const Header2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,6 +53,26 @@ const Header2 = () => {
         { icon: MessageCircle, label: "Chat", href: "#chat" },
         { icon: Phone, label: "Phone", href: "tel:+33123456789" }
       ]
+    },
+    logo: {
+      text: "L'Atelier de Beauté",
+      visual: {
+        type: 'image',
+        data: {
+          src: '/img/images.jpg',
+          alt: 'Logo Atelier de Beauté',
+          width: 120,
+          height: 48,
+          className: 'logo-image',
+          animation: {
+            type: 'hover',
+            params: {
+              scale: 1.1,
+              duration: 0.3
+            }
+          }
+        }
+      }
     }
   };
 
