@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Star } from 'lucide-react';
+import { generateScssSelector } from '@/lib/utils';
 
 const HomePage: React.FC = () => {
   const featuredProducts = [
@@ -8,6 +9,16 @@ const HomePage: React.FC = () => {
     { id: 2, name: "Sérum anti-âge", price: 49.99, rating: 4.8, image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" },
     { id: 3, name: "Masque capillaire", price: 19.99, rating: 4.2, image: "https://images.unsplash.com/photo-1526947425960-945c6e72858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" },
   ];
+
+  useEffect(()=>{
+    alert('ok')
+    const elt = document.getElementById("#okkk")
+    let tmp=""
+    if(elt)tmp = generateScssSelector(elt)
+    console.log(tmp);
+      
+  }, [])
+  
 
   return (
     <div className="container mx-auto px-4 py-8">

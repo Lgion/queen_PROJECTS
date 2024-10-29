@@ -1,3 +1,4 @@
+import React, {useEffect} from 'react';
 import Link from 'next/link';
 import { ArrowRight, Star } from 'lucide-react';
 import HomePage from './pages/HomePage';
@@ -6,6 +7,7 @@ import ProductDetailPage from './pages/ProductDetailPage';
 import CartPage from '../../4/cart/page';
 import CheckoutPage from './pages/CheckoutPage';
 import BlogPage from '../../4/blog/page';
+import { generateScssSelector } from '@/lib/utils';
 
 const featuredProducts = [
   { id: 1, name: "Crème hydratante", price: 29.99, rating: 4.5, image: "https://images.unsplash.com/photo-1570194065650-d99fb4b38b17?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" },
@@ -13,7 +15,19 @@ const featuredProducts = [
   { id: 3, name: "Masque capillaire", price: 19.99, rating: 4.2, image: "https://images.unsplash.com/photo-1526947425960-945c6e72858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" },
 ]
 
+
 function App() {
+
+  useEffect(()=>{
+    const elt = document.querySelector("header>div.mt-4")
+    let tmp=""
+    if(elt)tmp = generateScssSelector(elt)
+    console.log(elt);
+      
+    console.log(tmp);
+      
+  }, [])
+
   return (
       <main className="dsdsds flex-grow">    
         <div className="container mx-auto px-4 py-8">
