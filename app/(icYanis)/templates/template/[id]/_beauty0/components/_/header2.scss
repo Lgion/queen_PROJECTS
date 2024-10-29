@@ -22,10 +22,9 @@ header.header2 {
   }
 
   // Main Header
-  >div.container {
+  >section.container {
     @apply mx-auto px-4 py-3;
 
-    >div {
       @apply flex items-center justify-between;
 
       // Logo
@@ -42,9 +41,16 @@ header.header2 {
       // Desktop Navigation
       >nav {
         @apply hidden md:flex items-center space-x-8;
+        flex-basis: 40%;
+        flex-flow: wrap;
+        justify-content: space-around;
+        border: solid;
         >a {
           @apply text-sm font-medium hover:text-rose-600 transition-colors;
         }
+      }
+      >button {
+          @apply md:hidden md:block px-4 py-2 bg-rose-600 text-white rounded-full hover:bg-rose-700 transition-colors;
       }
 
       // Action Buttons
@@ -63,7 +69,6 @@ header.header2 {
           @apply md:hidden p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors;
         }
       }
-    }
   }
 
   // Mobile Menu
@@ -127,5 +132,168 @@ header.header2 {
         }
       }
     }
+  }
+}
+
+// Styles pour les modales
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+// Styles pour les tooltips
+.tooltip-bottom {
+  position: relative;
+
+  &:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+
+// Styles pour les contenus des modales
+.personal-info-modal,
+.booking-modal,
+.cart-modal {
+  @apply space-y-6;
+
+  h3 {
+    @apply text-lg font-semibold mb-4;
+  }
+
+  .form-group {
+    @apply space-y-2;
+    
+    label {
+      @apply block text-sm font-medium text-gray-700;
+    }
+    
+    input {
+      @apply w-full px-3 py-2 border rounded-md;
+    }
+  }
+}
+
+.preferences-list,
+.service-list {
+  @apply space-y-3;
+
+  .checkbox-item {
+    @apply flex items-center space-x-2;
+  }
+}
+
+.appointment-list {
+  @apply space-y-2;
+
+  .appointment-item {
+    @apply flex justify-between items-center p-3 bg-gray-50 rounded-md;
+  }
+}
+
+.cart-items {
+  .cart-item {
+    @apply flex items-center space-x-4 p-4 border-b;
+
+    img {
+      @apply w-16 h-16 object-cover rounded;
+    }
+
+    .item-details {
+      @apply flex-1;
+    }
+
+    .remove-item {
+      @apply text-gray-400 hover:text-red-500;
+    }
+  }
+}
+
+.cart-summary {
+  @apply mt-6 space-y-4;
+
+  .subtotal {
+    @apply flex justify-between text-lg font-semibold;
+  }
+
+  .checkout-button {
+    @apply w-full py-2 bg-rose-600 text-white rounded-md hover:bg-rose-700;
+  }
+}
+
+.action-buttons {
+  @apply flex items-center;
+  flex-flow: wrap;
+  flex-basis: 40%;
+  border: solid;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 1px inset;
+  margin: 0 1em;
+
+  .phone-button,
+  .booking-button,
+  .cart-button,
+  .loyalty-button,
+  .action-button {
+    @apply p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-all;
+    
+    &:hover {
+      @apply transform scale-110;
+    }
+  }
+
+  .cart-button {
+    @apply relative;
+    
+    .cart-count {
+      @apply absolute -top-2 -right-2 bg-rose-500 text-white text-xs 
+             rounded-full w-4 h-4 flex items-center justify-center;
+    }
+  }
+
+  .social-media-buttons {
+    @apply border-l border-gray-200 dark:border-gray-700 pl-4 ml-4;
+    
+    .social-button {
+      @apply p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800;
+    }
+  }
+
+  .other-actions {
+    @apply border-l border-gray-200 dark:border-gray-700 pl-4 ml-4;
   }
 }

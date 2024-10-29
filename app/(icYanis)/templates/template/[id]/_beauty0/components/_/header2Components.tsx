@@ -4,6 +4,25 @@ import {
   Users, Calendar, Image, Star, Mail, Home
 } from 'lucide-react';
 import Logo from './Logo';
+import {
+  BookingButton,
+  CartButton,
+  LoyaltyButton,
+  SocialMediaButtons,
+  PortfolioButton,
+  OnlineConsultButton,
+  GiftCardButton,
+  QuoteButton,
+  AvailabilityButton,
+  DealsButton,
+  ReferralButton,
+  NotificationsButton,
+  ClickAndCollectButton,
+  PaymentButton,
+  QuestionnaireButton,
+  PersonalInfoButton,
+  ContactButtons
+} from './ActionButtons';
 
 const NotificationBar = ({hasNotification, setHasNotification}: {
   hasNotification: boolean,
@@ -27,22 +46,79 @@ const NavMenus = ({data}: {data: any}) => (
   </nav>
 );
 
-const ActionButtons = ({data}: {
+interface ActionButtonsProps {
   data: {
-    phoneNumber: string,
+    phoneNumber: string;
+    booking: {
+      icon: any;
+      label: string;
+      href: string;
+      modalContent: {
+        title: string;
+        content: string;
+      };
+    };
+    cart: {
+      icon: any;
+      label: string;
+      href: string;
+      itemCount: number;
+      modalContent: {
+        title: string;
+        content: string;
+      };
+    };
+    personalInfo: {
+      icon: any;
+      label: string;
+      href: string;
+      modalContent: {
+        title: string;
+        content: React.ReactNode;
+      };
+    };
     contactButtons: Array<{
-      icon: any,
-      label: string,
-      href: string
-    }>
-  }
-}) => (
-  <div>
-    <a href={`tel:${data.phoneNumber}`}>
+      icon: any;
+      label: string;
+      href: string;
+    }>;
+    socialMedia: Array<{
+      icon: any;
+      label: string;
+      href: string;
+    }>;
+  };
+  onModalOpen: (modalId: string) => void;
+}
+
+const ActionButtons = ({ data, onModalOpen }: ActionButtonsProps) => (
+  <div className="action-buttons flex items-center space-x-4">
+    <a 
+      href={`tel:${data.phoneNumber}`}
+      title="Appelez-nous maintenant"
+      className="phone-button tooltip-bottom"
+    >
       <Phone size={18} />
-      <span>{data.phoneNumber}</span>
     </a>
-    <button>Réserver</button>
+    
+    <BookingButton data={data.booking} onModalOpen={onModalOpen} />
+    <CartButton data={data.cart} onModalOpen={onModalOpen} />
+    <LoyaltyButton data={data.loyalty} onModalOpen={onModalOpen} />
+    <PortfolioButton data={data.portfolio} onModalOpen={onModalOpen} />
+    <OnlineConsultButton data={data.onlineConsult} onModalOpen={onModalOpen} />
+    <GiftCardButton data={data.giftCard} onModalOpen={onModalOpen} />
+    <QuoteButton data={data.quote} onModalOpen={onModalOpen} />
+    <AvailabilityButton data={data.availability} onModalOpen={onModalOpen} />
+    <DealsButton data={data.deals} onModalOpen={onModalOpen} />
+    <ReferralButton data={data.referral} onModalOpen={onModalOpen} />
+    <NotificationsButton data={data.notifications} onModalOpen={onModalOpen} />
+    <ClickAndCollectButton data={data.clickAndCollect} onModalOpen={onModalOpen} />
+    <PaymentButton data={data.payment} onModalOpen={onModalOpen} />
+    <QuestionnaireButton data={data.questionnaire} onModalOpen={onModalOpen} />
+    <PersonalInfoButton data={data.personalInfo} onModalOpen={onModalOpen} />
+    <ContactButtons data={data.contactButtons} />
+    
+    <SocialMediaButtons data={data.socialMedia} />
   </div>
 );
 
