@@ -15,6 +15,11 @@ je vois dans le scss les class overlay et mobile-menu,mais elles ne sont applicq
 - report bug prompt: okay c'est super, mais il reste qlq petits détails à régler.
 Tu as créer "menuItems" pour les données, cependant je voudrais un objet "data, comme dans Header0. tu en profiteras pour passer les donnée à ActionButtons
 - dans la varaible data tu  définis "contactButtons" mais tu ne l'utilise à aucun moment..
+
+
+
+---
+PERFORMER LOGO COMPONENT
 ---
 long prompt:
 Je voudrais performer Logo.
@@ -40,3 +45,12 @@ Dans tous les cas:
 1. le seul canvas que je vois dans Header2;, déplace le dans _/Logo/canvas
 2. crée à en plus les 5 canvas que tu m'as proposé juste avant (Particules Gravitationnelles, Spirographe, OndesConcentriques, Kaléidoscope, MatrixDigitalRain)
 
+- rreport bug prompt: 
+Dans le code généré dans Logo, concernant les données par défaut, tu as LogoProps qui prévoit 4 propriétés possibles, mais ligne 81, tu ne retourne un objet ne contenant que la propriété "visual".
+Il faudrait que la valeur retourné ai autant de chance de contenir seulement la propriété "visual" que seulement la propriété "text" ou encore les propriété combinés text et visual, ou tout autre combinaisaon de propriétés.
+
+
+
+---
+
+---

@@ -1,4 +1,5 @@
 import { Scissors } from 'lucide-react';
+import { motion } from 'framer-motion';
 import TextLogo from './TextLogo';
 import ImageLogo from './ImageLogo';
 import SvgLogo from './SvgLogo';
@@ -25,8 +26,17 @@ type LogoProps = {
 // Générateur de données par défaut
 const generateDefaultLogoData = (): LogoProps => {
   const types = ['image', 'svg', 'canvas'] as const;
-  const randomType = types[Math.floor(Math.random() * types.length)];
+  const defaultTexts = ["L'Atelier", "Beauty Shop", "Salon de Beauté"];
+  const defaultSlogans = ["Votre beauté, notre passion", "L'art de la beauté", "Excellence et élégance"];
 
+  // Générer une combinaison aléatoire de propriétés
+  const hasText = Math.random() < 0.5;
+  const hasSecondaryText = Math.random() < 0.5;
+  const hasVisual = Math.random() < 0.5;
+  const hasCustomAnimation = Math.random() < 0.5;
+
+  // Préparer les données visuelles si nécessaire
+  const randomType = types[Math.floor(Math.random() * types.length)];
   const canvasAnimations = {
     ScissorsRotation,
     GravityParticles,
@@ -36,7 +46,15 @@ const generateDefaultLogoData = (): LogoProps => {
     MatrixRain
   };
 
-  const defaultData: Record<typeof randomType, LogoVisualProps> = {
+  console.log("\n\n\n\nstaaaaaaaaaaaaaarto!");
+  
+
+  // Correction du typage pour l'accès aux animations canvas
+  const randomAnimationKey = Object.keys(canvasAnimations)[
+    Math.floor(Math.random() * Object.keys(canvasAnimations).length)
+  ] as keyof typeof canvasAnimations;
+
+  const defaultVisual: Record<typeof randomType, LogoVisualProps> = {
     image: {
       type: 'image',
       data: {
@@ -69,18 +87,42 @@ const generateDefaultLogoData = (): LogoProps => {
       data: {
         width: 48,
         height: 48,
-        draw: canvasAnimations[
-          Object.keys(canvasAnimations)[
-            Math.floor(Math.random() * Object.keys(canvasAnimations).length)
-          ]
-        ]
+        draw: canvasAnimations[randomAnimationKey]
       }
     }
   };
 
-  return {
-    visual: defaultData[randomType]
-  };
+  // Construire l'objet de retour en fonction des flags
+  const result: LogoProps = {};
+  console.log("hasText: "+hasText);
+  console.log("hasSecondaryText: "+hasSecondaryText);
+  console.log("hasVisual: "+hasVisual);
+  console.log("hasCustomAnimation: "+hasCustomAnimation);
+  
+
+  if (hasText) {
+    result.text = defaultTexts[Math.floor(Math.random() * defaultTexts.length)];
+  }
+
+  if (hasSecondaryText && hasText) { // secondaryText nécessite text
+    result.secondaryText = defaultSlogans[Math.floor(Math.random() * defaultSlogans.length)];
+  }
+
+  if (hasVisual && !hasSecondaryText) { // visual est ignoré si secondaryText est présent
+    console.log(defaultVisual);
+    console.log(randomType);
+    console.log(defaultVisual[randomType]);
+    
+    
+    
+    result.visual = defaultVisual[randomType];
+  }
+
+  if (hasCustomAnimation) {
+    result.CustomAnimation = motion.div;
+  }
+
+  return result;
 };
 
 const Logo = (props: LogoProps) => {
@@ -88,12 +130,14 @@ const Logo = (props: LogoProps) => {
   const logoData = Object.keys(props).length === 0 ? generateDefaultLogoData() : props;
   const { text, secondaryText, visual, CustomAnimation } = logoData;
 
-  console.log(Object.keys(props).length);
+  console.log(Object.keys(props));
   console.log(logoData);
   
   
   // Cas 1: Deux textes (ignore le visuel)
   if (text && secondaryText) {
+    console.log(1);
+    
     return (
       <figure>
         <TextLogo animation={CustomAnimation}>{text}</TextLogo>
@@ -102,13 +146,23 @@ const Logo = (props: LogoProps) => {
     );
   }
 
+  // Cas 4: Texte avec animation personnalisée
+  if ((text||secondaryText) && CustomAnimation) {
+    console.log(4);
+    return <CustomAnimation>{text}</CustomAnimation>;
+  }
+
   // Cas 2: Texte seul
-  if (text && !visual) {
+  if ((text||secondaryText) && !visual) {
+    console.log(2);
     return <TextLogo animation={CustomAnimation}>{text}</TextLogo>;
   }
 
+  
+
   // Cas 3: Texte + Visuel (texte comme slogan)
   if (text && visual) {
+    console.log(3);
     const VisualComponent = {
       'image': ImageLogo,
       'svg': SvgLogo,
@@ -124,8 +178,32 @@ const Logo = (props: LogoProps) => {
     );
   }
 
+  // Cas 5: Seulement le visuel
+  if (!text && visual) {
+    console.log(5);
+    const VisualComponent = {
+      'image': ImageLogo,
+      'svg': SvgLogo,
+      'canvas': CanvasLogo,
+      'object': ObjectLogo
+    }[visual.type];
+
+    return (
+      <figure>
+        <VisualComponent data={visual.data} animation={visual.animation} />
+      </figure>
+    );
+  }
+
+  // Cas 6: Seulement CustomAnimation défini
+  if (CustomAnimation && !text && !visual) {
+    console.log(6);
+    return <CustomAnimation>Text Démonstratif</CustomAnimation>;
+  }
+  
   // Cas 4: Par défaut - SVG simple
-  return <Scissors className="h-8 w-8" />;
+    console.log(4);
+    return <Scissors className="h-8 w-8" />;
 };
 
 export default Logo; 

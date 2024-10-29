@@ -1,0 +1,72 @@
+header {
+    @apply bg-gradient-to-r from-orange-600 to-orange-500 text-white p-4 shadow-md;
+
+    >div {
+        @apply container mx-auto flex justify-between items-center;
+
+        >a {
+            @apply text-2xl font-bold;
+        }
+
+        >div {
+            @apply hidden md:flex items-center space-x-6;
+
+            >form {
+                @apply relative;
+
+                >input {
+                    @apply py-1 px-3 pr-10 rounded-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-300;
+                }
+
+                >button {
+                    @apply absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-600;
+                }
+            }
+
+            >nav {
+                >ul {
+                    @apply flex space-x-6;
+
+                    >li {
+                        >a {
+                            @apply hover:text-orange-200 transition duration-300;
+                        }
+
+                        >svg {
+                            @apply hover:text-orange-200 transition duration-300 cursor-pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        >button {
+            @apply md:hidden;
+        }
+    }
+
+    // Menu mobile
+    div[class*="md:hidden"] {
+        @apply mt-4;
+
+        form {
+            @apply mb-4;
+
+            input {
+                @apply w-full py-2 px-4 rounded-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-300;
+            }
+        }
+
+        nav {
+            ul {
+                @apply flex flex-col space-y-2;
+
+                li {
+                    a {
+                        @apply block py-2 hover:bg-orange-700 transition duration-300;
+                    }
+                }
+            }
+        }
+    }
+} 
