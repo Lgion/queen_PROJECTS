@@ -55,3 +55,133 @@ c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/Downlo
     at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
     at SimpleURLLoaderWrapper.emit (node:events:514:28)
 [77994:1030/000244.801861:ERROR:atom_cache.cc(229)] Add code/file-list to kAtomsToCache
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorx2R3WK/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-30T15:17:07.351Z][0m [uncaught exception in main]: Error: net::ERR_NAME_NOT_RESOLVED
+[91m[main 2024-10-30T15:17:07.351Z][0m Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorx2R3WK/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-30T15:27:07.354Z][0m [uncaught exception in main]: Error: net::ERR_NAME_NOT_RESOLVED
+[91m[main 2024-10-30T15:27:07.355Z][0m Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorx2R3WK/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-30T15:36:31.272Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 2024-10-30T15:36:31.273Z][0m Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
+[91m[main 2024-10-30T18:33:30.347Z][0m [UtilityProcessWorker]: terminated unexpectedly with code 139, signal: unknown
+[91m[main 2024-10-30T18:33:30.348Z][0m [UtilityProcess id: 1, type: fileWatcher, pid: 78193]: crashed with code 139 and reason 'crashed'
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorx2R3WK/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-30T18:38:51.346Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 2024-10-30T18:38:51.347Z][0m Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorx2R3WK/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-30T18:48:51.365Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 2024-10-30T18:48:51.365Z][0m Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorx2R3WK/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-30T18:59:01.366Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 2024-10-30T18:59:01.366Z][0m Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorx2R3WK/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-30T19:09:01.371Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 2024-10-30T19:09:01.371Z][0m Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorx2R3WK/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-30T19:18:51.372Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 2024-10-30T19:18:51.373Z][0m Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)

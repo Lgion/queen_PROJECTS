@@ -1,6 +1,6 @@
 import React from 'react';
 import { X } from 'lucide-react';
-import type { ModalStyle, ModalAnimation, ModalShape } from '../../types/modal';
+import type { ModalStyle, ModalAnimation, ModalShape } from '../types/modal';
 
 interface ModalProps {
   isOpen: boolean;

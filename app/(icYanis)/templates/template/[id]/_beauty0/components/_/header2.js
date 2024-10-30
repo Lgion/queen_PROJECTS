@@ -22,7 +22,7 @@ export default {
       { icon: Mail, label: 'Contact', href: '#contact' },
     ],
     actionButtons: {
-      phoneNumber: "+33123456789",
+    //   phoneNumber: "+33123456789",
       booking: {
         icon: CalendarIcon,
         label: "Réserver",
@@ -118,9 +118,45 @@ export default {
         }
       ],
       socialMedia: [
-        { icon: Facebook, label: "Facebook", href: "https://facebook.com/example" },
-        { icon: Instagram, label: "Instagram", href: "https://instagram.com/example" },
-        { icon: Twitter, label: "Twitter", href: "https://twitter.com/example" }
+        { 
+          icon: Facebook, 
+          label: "Facebook", 
+          href: "https://facebook.com/example",
+          modalContent: {
+            title: "Facebook",
+            content: "Suivez notre actualité sur Facebook..."
+          },
+          modalStyle: {
+            animation: 'fade',
+            shape: 'rounded'
+          }
+        },
+        { 
+          icon: Instagram, 
+          label: "Instagram", 
+          href: "https://instagram.com/example",
+          modalContent: {
+            title: "Instagram",
+            content: "Découvrez nos stories Instagram..."
+          },
+          modalStyle: {
+            animation: 'scale',
+            shape: 'rounded'
+          }
+        },
+        { 
+          icon: Twitter, 
+          label: "Twitter", 
+          href: "https://twitter.com/example",
+          modalContent: {
+            title: "Twitter",
+            content: "Suivez nos tweets..."
+          },
+          modalStyle: {
+            animation: 'slide-up',
+            shape: 'rounded'
+          }
+        }
       ],
       loyalty: {
         icon: Heart,
