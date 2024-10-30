@@ -85,4 +85,20 @@ Tu comprends ce que je te demande ?
     À la fin de ta refactorisation, il faut donc utiliser le nouveau composant ModalButton pour afficher tous les boutons d'action présents dans le fichier de données header2.js, as-tu tout bien compris ?
 
 
+---
+### MOBILEMENU OPTIMISATIONS & ...
+---
+#### optimisation prompt: 
+- Il s'agit d'un menu hamburger, j''aimerai que la sémantique html soit plus optimisé, et dans ce sens je ne veux plus voir de balise div. Enfin, il faudra bien sur veillé a ce que les modifications que tu effectue dans le html, tu puiss aussi effectuer ces meme modifications dans les selecteur css afin de préserver le style présent dans header2.scss
 
+#### generation upon models & references prompt
+- J'ai un exemple de mobile-menu en l'espece du fichier header8.tsx. Dedans le mobile-menu (ou menu hambuger, ou hamburger tout simplement) s'affiche dans une animation de rotations entre autres, avec des couleurs aussi.
+Est-ceque tu peux créer les données dans header2.js correspondant à ce header8.tsx ? Puis mimer le compôrtement du menu hamburger de header8.tsx dans un composant nommé Hamburger_1.jsx ?
+Pour le style de Hamburger_1.jsx je veux qu'il soit dans un fichier scss dédié.
+- J'ai un exemple de mobile-menu en l'espece du fichier header9.tsx. Dedans le mobile-menu (ou menu hambuger, ou hamburger tout simplement) s'affiche dans une animation  allant de droite à gauche avec une opacité croissante  ainsi qu'un léger jeu d'animation des bouton du menu lros de l'ouverture.
+Est-ceque tu peux créer les données dans header2.js correspondant à ce header9.tsx ? Puis mimer le compôrtement du menu hamburger de header9.tsx dans un composant nommé Hamburger_2.jsx ?
+Pour le style de Hamburger_2.jsx je veux qu'il soit dans un fichier scss dédié.
+- Okay super bon travail.
+Maintenant je te propose de créer le composant Hamburger_3.jsx, dans le meme esprit que les 2 précédent prompt sauf que cette fois-ci tu n'as pas de modèle pour ce prompt. Tu devras imaginer ce template, et faire en sorte que ses animations le rende très attractif. En gros, génère moi le composant Hamburger_3.jsx de sorte qu'ill soit très attractif
+- Okay, super bien.
+Maintenant c'est partie pour un essaie avec une perspective et des effets 3D. Tu peux faire ça ?

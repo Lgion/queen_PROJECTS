@@ -6,7 +6,8 @@ import {
     Gift, Clock, FileText, Camera,
     Ticket, Heart, Share2, Bell,
     Clipboard, Coffee, Video,
-    CreditCard as PaymentIcon
+    CreditCard as PaymentIcon,
+    Compass
 } from 'lucide-react';
 
 
@@ -329,6 +330,216 @@ export default {
             type: 'hover',
             params: {
               scale: 1.1,
+              duration: 0.3
+            }
+          }
+        }
+      }
+    },
+    circularMenu: {
+      items: [
+        { icon: Compass, label: 'Explorer', color: 'bg-emerald-500' },
+        { icon: Scissors, label: 'Styles', color: 'bg-blue-500' },
+        { icon: Clock, label: 'Horaires', color: 'bg-purple-500' },
+        { icon: Gift, label: 'Offres', color: 'bg-pink-500' },
+        { icon: Camera, label: 'Galerie', color: 'bg-yellow-500' },
+        { icon: ShoppingCart, label: 'Panier', color: 'bg-violet-500' },
+        { icon: Star, label: 'Services', color: 'bg-indigo-500' },
+      ],
+      animations: {
+        container: {
+          closed: {
+            scale: 0,
+            opacity: 0,
+          },
+          open: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              duration: 0.5,
+              staggerChildren: 0.1,
+            },
+          },
+        },
+        item: {
+          closed: { scale: 0, opacity: 0 },
+          open: { scale: 1, opacity: 1 },
+        }
+      }
+    },
+    slideMenu: {
+      items: [
+        { 
+          icon: Scissors, 
+          label: 'Services', 
+          color: 'bg-rose-500',
+          href: '#services' 
+        },
+        { 
+          icon: Calendar, 
+          label: 'Réserver', 
+          color: 'bg-violet-500',
+          href: '#reserver' 
+        },
+        { 
+          icon: Image, 
+          label: 'Galerie', 
+          color: 'bg-amber-500',
+          href: '#galerie' 
+        },
+        { 
+          icon: MessageCircle, 
+          label: 'Avis', 
+          color: 'bg-blue-500',
+          href: '#avis' 
+        }
+      ],
+      animations: {
+        overlay: {
+          initial: { opacity: 0 },
+          animate: { opacity: 1 },
+          exit: { opacity: 0 }
+        },
+        menu: {
+          initial: { opacity: 0, x: "100%" },
+          animate: { 
+            opacity: 1, 
+            x: 0,
+            transition: {
+              type: "spring",
+              damping: 25
+            }
+          },
+          exit: { opacity: 0, x: "100%" }
+        },
+        item: {
+          initial: { opacity: 0, x: 50 },
+          animate: (index) => ({
+            opacity: 1,
+            x: 0,
+            transition: {
+              delay: index * 0.1
+            }
+          })
+        }
+      }
+    },
+    floatingMenu: {
+      items: [
+        { 
+          icon: Scissors, 
+          label: 'Services', 
+          color: 'from-violet-600 to-indigo-600',
+          href: '#services',
+          delay: 0.1
+        },
+        { 
+          icon: Calendar, 
+          label: 'Réserver', 
+          color: 'from-rose-600 to-pink-600',
+          href: '#reserver',
+          delay: 0.2
+        },
+        { 
+          icon: Image, 
+          label: 'Galerie', 
+          color: 'from-amber-500 to-orange-600',
+          href: '#galerie',
+          delay: 0.3
+        },
+        { 
+          icon: MessageCircle, 
+          label: 'Avis', 
+          color: 'from-emerald-500 to-teal-600',
+          href: '#avis',
+          delay: 0.4
+        }
+      ],
+      animations: {
+        container: {
+          initial: { 
+            opacity: 0,
+            scale: 0.8,
+            y: 20
+          },
+          animate: { 
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            transition: {
+              type: "spring",
+              stiffness: 300,
+              damping: 20
+            }
+          },
+          exit: { 
+            opacity: 0,
+            scale: 0.8,
+            y: 20,
+            transition: {
+              duration: 0.2
+            }
+          }
+        },
+        stagger: {
+          animate: {
+            transition: {
+              staggerChildren: 0.1
+            }
+          }
+        }
+      }
+    },
+    perspective3DMenu: {
+      items: [
+        { 
+          icon: Scissors, 
+          label: 'Services', 
+          color: 'from-purple-600 to-indigo-600',
+          href: '#services',
+          z: -20
+        },
+        { 
+          icon: Calendar, 
+          label: 'Réserver', 
+          color: 'from-rose-600 to-fuchsia-600',
+          href: '#reserver',
+          z: -40
+        },
+        { 
+          icon: Image, 
+          label: 'Galerie', 
+          color: 'from-amber-500 to-orange-600',
+          href: '#galerie',
+          z: -60
+        },
+        { 
+          icon: MessageCircle, 
+          label: 'Avis', 
+          color: 'from-emerald-500 to-teal-600',
+          href: '#avis',
+          z: -80
+        }
+      ],
+      animations: {
+        container: {
+          initial: { 
+            opacity: 0,
+            rotateX: 45,
+            perspective: 1000
+          },
+          animate: { 
+            opacity: 1,
+            rotateX: 0,
+            transition: {
+              duration: 0.5,
+              ease: "easeOut"
+            }
+          },
+          exit: { 
+            opacity: 0,
+            rotateX: 45,
+            transition: {
               duration: 0.3
             }
           }

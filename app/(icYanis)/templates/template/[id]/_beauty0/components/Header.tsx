@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import MyHeader from "./_/Header0"
-import Header1 from "./_/Header1"
+import Header1 from "./_/_/Header1"
 import Header2 from "./_/Header2"
 
 // const Header: React.FC = () => <MyHeader />
