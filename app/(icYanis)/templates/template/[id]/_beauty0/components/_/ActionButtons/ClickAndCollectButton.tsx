@@ -73,7 +73,7 @@ const ClickAndCollectModal = () => (
     </div>
 
     <div className="collection-info">
-      <h3>Points de retrait</h3>
+      <h3>Points de retraitttt</h3>
       <div className="pickup-points">
         {[
           {

@@ -30,6 +30,10 @@ export default {
         modalContent: {
           title: "Réservation",
           content: "Formulaire de réservation ici..."
+        },
+        modalStyle: {
+          animation: 'rotate',
+          shape: 'side-panel'
         }
       },
       cart: {
@@ -40,6 +44,10 @@ export default {
         modalContent: {
           title: "Votre Panier",
           content: "Contenu du panier ici..."
+        },
+        modalStyle: {
+          animation: 'slide-down',
+          shape: 'side-panel'
         }
       },
       personalInfo: {
@@ -49,13 +57,65 @@ export default {
         modalContent: {
           title: "Mes Informations",
           content: "Coordonnées personnelles, préférences, historique..."
+        },
+        modalStyle: {
+          animation: 'fade',
+          shape: 'rounded'
         }
       },
       contactButtons: [
-        { icon: MapPin, label: "Location", href: "#location" },
-        { icon: MessageCircle, label: "Chat", href: "#chat" },
-        { icon: Phone, label: "Phone", href: "tel:+33123456789" },
-        { icon: Mail, label: "Email", href: "mailto:contact@example.com" }
+        { 
+          icon: MapPin, 
+          label: "Location", 
+          href: "#location",
+          modalContent: {
+            title: "Notre Localisation",
+            content: "Retrouvez-nous à cette adresse..."
+          },
+          modalStyle: {
+            animation: 'fade',
+            shape: 'default'
+          }
+        },
+        { 
+          icon: MessageCircle, 
+          label: "Chat", 
+          href: "#chat",
+          modalContent: {
+            title: "Chat en direct",
+            content: "Discutez avec nos conseillers..."
+          },
+          modalStyle: {
+            animation: 'slide-up',
+            shape: 'rounded'
+          }
+        },
+        { 
+          icon: Phone, 
+          label: "Phone", 
+          href: "tel:+33123456789",
+          modalContent: {
+            title: "Nous appeler",
+            content: "Contactez-nous par téléphone..."
+          },
+          modalStyle: {
+            animation: 'scale',
+            shape: 'default'
+          }
+        },
+        { 
+          icon: Mail, 
+          label: "Email", 
+          href: "mailto:contact@example.com",
+          modalContent: {
+            title: "Nous écrire",
+            content: "Envoyez-nous un email..."
+          },
+          modalStyle: {
+            animation: 'slide-down',
+            shape: 'rounded'
+          }
+        }
       ],
       socialMedia: [
         { icon: Facebook, label: "Facebook", href: "https://facebook.com/example" },
@@ -69,6 +129,10 @@ export default {
         modalContent: {
           title: "Programme de Fidélité",
           content: "Points et avantages fidélité..."
+        },
+        modalStyle: {
+          animation: 'slide-up',
+          shape: 'rounded'
         }
       },
       portfolio: {
@@ -78,6 +142,10 @@ export default {
         modalContent: {
           title: "Mon Portfolio",
           content: "Galerie avant/après..."
+        },
+        modalStyle: {
+          animation: 'rotate',
+          shape: 'default'
         }
       },
       onlineConsult: {
@@ -87,6 +155,10 @@ export default {
         modalContent: {
           title: "Consultation Vidéo",
           content: "Planifier une consultation en ligne..."
+        },
+        modalStyle: {
+          animation: 'rotate',
+          shape: 'side-panel'
         }
       },
       giftCard: {
@@ -96,6 +168,10 @@ export default {
         modalContent: {
           title: "Cartes Cadeaux",
           content: "Offrir une prestation..."
+        },
+        modalStyle: {
+          animation: 'slide-up',
+          shape: 'side-panel'
         }
       },
       quote: {
@@ -105,6 +181,10 @@ export default {
         modalContent: {
           title: "Devis Rapide",
           content: "Estimation personnalisée..."
+        },
+        modalStyle: {
+          animation: 'slide-up',
+          shape: 'side-panel'
         }
       },
       availability: {
@@ -114,6 +194,10 @@ export default {
         modalContent: {
           title: "Disponibilités",
           content: "Créneaux disponibles..."
+        },
+        modalStyle: {
+          animation: 'slide-up',
+          shape: 'full-width'
         }
       },
       deals: {
@@ -123,6 +207,10 @@ export default {
         modalContent: {
           title: "Offres Spéciales",
           content: "Promotions en cours..."
+        },
+        modalStyle: {
+          animation: 'slide-up',
+          shape: 'full-width'
         }
       },
       referral: {
@@ -132,6 +220,10 @@ export default {
         modalContent: {
           title: "Programme de Parrainage",
           content: "Parrainez vos amis..."
+        },
+        modalStyle: {
+          animation: 'slide-up',
+          shape: 'full-width'
         }
       },
       notifications: {
@@ -141,6 +233,10 @@ export default {
         modalContent: {
           title: "Mes Notifications",
           content: "Gérer mes alertes..."
+        },
+        modalStyle: {
+          animation: 'fade',
+          shape: 'default'
         }
       },
       clickAndCollect: {
@@ -150,6 +246,10 @@ export default {
         modalContent: {
           title: "Click & Collect",
           content: "Commander et retirer..."
+        },
+        modalStyle: {
+          animation: 'slide-up',
+          shape: 'rounded'
         }
       },
       payment: {
@@ -159,6 +259,10 @@ export default {
         modalContent: {
           title: "Options de Paiement",
           content: "Paiement en plusieurs fois..."
+        },
+        modalStyle: {
+          animation: 'slide-up',
+          shape: 'rounded'
         }
       },
       questionnaire: {
@@ -168,6 +272,10 @@ export default {
         modalContent: {
           title: "Questionnaire Préalable",
           content: "Mieux vous connaître..."
+        },
+        modalStyle: {
+          animation: 'slide-up',
+          shape: 'rounded'
         }
       }
     },

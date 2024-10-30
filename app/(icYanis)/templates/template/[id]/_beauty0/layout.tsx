@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Page from './page'
+import './styles/modal.scss';
 
 export default function RootLayout({
   children,

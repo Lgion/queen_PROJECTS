@@ -103,6 +103,7 @@ const ActionButtons = ({ data, onModalOpen }: ActionButtonsProps) => (
     
     <BookingButton data={data.booking} onModalOpen={onModalOpen} />
     <CartButton data={data.cart} onModalOpen={onModalOpen} />
+    <ContactButtons data={data.contactButtons} onModalOpen={onModalOpen} />
     <LoyaltyButton data={data.loyalty} onModalOpen={onModalOpen} />
     <PortfolioButton data={data.portfolio} onModalOpen={onModalOpen} />
     <OnlineConsultButton data={data.onlineConsult} onModalOpen={onModalOpen} />
@@ -116,7 +117,6 @@ const ActionButtons = ({ data, onModalOpen }: ActionButtonsProps) => (
     <PaymentButton data={data.payment} onModalOpen={onModalOpen} />
     <QuestionnaireButton data={data.questionnaire} onModalOpen={onModalOpen} />
     <PersonalInfoButton data={data.personalInfo} onModalOpen={onModalOpen} />
-    <ContactButtons data={data.contactButtons} />
     
     <SocialMediaButtons data={data.socialMedia} />
   </div>

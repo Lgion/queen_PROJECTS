@@ -24,6 +24,7 @@ import {
 import { Rotate3DAnimation } from './Logo/animations';
 import { ScissorsRotation, GravityParticles, Spirograph, ConcentricWaves, Kaleidoscope, MatrixRain } from './Logo/canvas';
 import Modal from './Modal';
+import "../../styles/modal.scss"
 
 const Header2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
