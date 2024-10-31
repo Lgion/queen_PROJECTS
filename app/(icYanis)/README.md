@@ -101,4 +101,4 @@ Pour le style de Hamburger_2.jsx je veux qu'il soit dans un fichier scss dédié
 - Okay super bon travail.
 Maintenant je te propose de créer le composant Hamburger_3.jsx, dans le meme esprit que les 2 précédent prompt sauf que cette fois-ci tu n'as pas de modèle pour ce prompt. Tu devras imaginer ce template, et faire en sorte que ses animations le rende très attractif. En gros, génère moi le composant Hamburger_3.jsx de sorte qu'ill soit très attractif
 - Okay, super bien.
-Maintenant c'est partie pour un essaie avec une perspective et des effets 3D. Tu peux faire ça ?
+Maintenant je te propose de créer le composant Hamburger_4.jsx, et  c'est partie pour un essaie avec une perspective et des effets 3D. Tu peux faire ça ?

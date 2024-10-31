@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ClerkProvider } from '@clerk/nextjs'
 import localFont from "next/font/local";
 import "./index.css"
+import { SpinLoaders0 } from "./spinLoaders/index"
 
 
 const geistSans = localFont({
@@ -28,8 +29,10 @@ export default function RootLayout({
   return (
     <body
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      style={{height: "1000px"}}
     >
         {children}
+      <SpinLoaders0 />
     </body>
   );
 }

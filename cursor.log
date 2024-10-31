@@ -185,3 +185,123 @@ c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/Downlo
 [91m[main 2024-10-30T19:18:51.373Z][0m Error: net::ERR_INTERNET_DISCONNECTED
     at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
     at SimpleURLLoaderWrapper.emit (node:events:514:28)
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorx2R3WK/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-30T21:19:06.890Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 2024-10-30T21:19:06.890Z][0m Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
+[90m[main 2024-10-30T23:13:55.066Z][0m Extension host with pid 123585 exited with code: 0, signal: unknown.
+[1031/001355.248142:ERROR:elf_dynamic_array_reader.h(64)] tag not found
+[91m[main 2024-10-30T23:13:56.068Z][0m Extension host with pid 123585 still exists, forcefully killing it...
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorx2R3WK/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-30T23:20:32.240Z][0m [uncaught exception in main]: Error: net::ERR_NAME_NOT_RESOLVED
+[91m[main 2024-10-30T23:20:32.241Z][0m Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorx2R3WK/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-30T23:50:06.171Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 2024-10-30T23:50:06.171Z][0m Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorx2R3WK/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-31T00:00:06.168Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 2024-10-31T00:00:06.168Z][0m Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
+[93m[main 2024-10-31T00:07:48.852Z][0m No ptyHost heartbeat after 6 seconds
+(node:77994) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 close listeners added to [TLSSocket]. Use emitter.setMaxListeners() to increase limit
+(Use `cursor --trace-warnings ...` to show where the warning was created)
+(node:77994) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 close listeners added to [TLSSocket]. Use emitter.setMaxListeners() to increase limit
+(node:77994) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 close listeners added to [TLSSocket]. Use emitter.setMaxListeners() to increase limit
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorx2R3WK/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-31T08:34:13.710Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 2024-10-31T08:34:13.710Z][0m Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorx2R3WK/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-31T08:44:13.707Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 2024-10-31T08:44:13.707Z][0m Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
+c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorx2R3WK/resources/app/out/main.js:1:313656)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:495:9)
+    at TLSSocket.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+[91m[main 2024-10-31T08:54:13.709Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 2024-10-31T08:54:13.710Z][0m Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
