@@ -32,7 +32,7 @@ export default function RootLayout({
       style={{height: "1000px"}}
     >
         {children}
-      <SpinLoaders loaderId={1} duration={3000} />
+      <SpinLoaders loaderId={4} duration={3000} />
     </body>
   );
 }

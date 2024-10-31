@@ -3,6 +3,7 @@ import './styles/base.scss';
 import './styles/spinner1.scss';
 import './styles/spinner2.scss';
 import './styles/spinner3.scss';
+import './styles/spinner4.scss';
 
 export const Spinner1 = () => (
   <div className="spinner-type1">
@@ -26,7 +27,20 @@ export const Spinner2 = () => (
 export const Spinner3 = () => (
   <div className="spinner-type3">
     <div className="spinner">
-      <div className="spinner-circle"></div>
+      <div className="spinner-circle" />
+    </div>
+  </div>
+);
+
+export const Spinner4 = () => (
+  <div className="spinner-type4">
+    <div className="spinner">
+      <div className="dots">
+        <div className="dot dot1"></div>
+        <div className="dot dot2"></div>
+        <div className="dot dot3"></div>
+      </div>
+      <div className="ring"></div>
     </div>
   </div>
 );
