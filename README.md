@@ -58,3 +58,15 @@ https://www.figma.com/community/file/1267688208388308864
 
 ## 3. Définir les mots clés
 
+
+## 4. yanis
+
+-prompt header:fait encore une nouvelle creation dans page de headerE et essaye de faire un truc qui ressemble a aucun des 12 header en mobile first soit avec card
+
+
+## EFFECTIVE TRIED PROMPTS:
+
+- toutes les baslises ayant une class css, doivent etre transfére vers header.scss, puis dans le fichier tsx il faudra ensuite supprimer ces classes css
+- 
+
+

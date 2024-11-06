@@ -1,0 +1,18 @@
+.card{
+    >img{
+        @extend .card-img-top;
+    }
+    >section{
+        @extend .card-body;
+        >h2,>h3,>h4,>h5{
+            @extend .card-title;
+        }
+        >p{
+            @extend .card-text;
+        }
+        >a{
+            @extend .btn;
+            @extend .btn-primary;
+        }
+    }
+}

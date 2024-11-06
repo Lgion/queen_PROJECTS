@@ -8,6 +8,8 @@ export default authMiddleware({publicRoutes: [
       ,"/"
       ,"/workouts"
       ,"/workouts/(.*)"
+      ,"/legionUI"
+      ,"/legionUI/(.*)"
       ,"/templates"
       ,"/templates/(.*)"
       ,"/yanis0"
@@ -15,6 +17,13 @@ export default authMiddleware({publicRoutes: [
       ,"/cyr0"
       ,"/cyr0/(.*)"
       ,"/header(.)"
+      ,"/api/logo"
+      ,"/headers/(.*)"
+      ,"/gaming/(.*)"
+      ,"/gossip"
+      ,"/gossip/(.*)"
+      // ,"/blog"
+      // ,"/blog/(.*)"
 ]});
  
 export const config = {

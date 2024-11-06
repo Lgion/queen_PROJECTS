@@ -1,0 +1,49 @@
+.slide-menu {
+  @apply fixed inset-y-0 right-0 w-full sm:w-[400px] bg-white z-50;
+
+  &__overlay {
+    @apply fixed inset-0 bg-black/20 backdrop-blur-[2px] z-40;
+  }
+
+  &__content {
+    @apply p-6 h-full flex flex-col;
+  }
+
+  &__header {
+    @apply flex justify-end mb-8;
+  }
+
+  &__close {
+    @apply p-2 hover:bg-gray-50 rounded-full transition-colors;
+  }
+
+  &__nav {
+    @apply space-y-6;
+  }
+
+  &__item {
+    @apply flex items-center space-x-4 text-lg;
+  }
+
+  &__icon {
+    @apply p-3 rounded-full;
+  }
+
+  &__label {
+    @apply font-medium;
+  }
+
+  &__footer {
+    @apply mt-auto;
+  }
+
+  &__cta {
+    @apply w-full py-4 bg-black text-white rounded-xl font-medium;
+  }
+}
+
+// Couleurs des icônes
+// .bg-rose-500 { @apply bg-rose-500; }
+// .bg-violet-500 { @apply bg-violet-500; }
+// .bg-amber-500 { @apply bg-amber-500; }
+// .bg-blue-500 { @apply bg-blue-500; } 

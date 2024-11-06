@@ -1,12 +1,14 @@
 nohup: les entrées sont ignorées
 MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
 
-[90m[main 2024-10-24T13:44:54.192Z][0m update#setState disabled
-[90m[main 2024-10-24T13:44:54.224Z][0m update#ctor - updates are disabled as there is no update URL
-[91m[main 2024-10-24T13:44:54.420Z][0m [storage state.vscdb] error checking size of src.vs.platform.reactivestorage.browser.reactiveStorageServiceImpl.persistentStorage.workspaceUser: Error: Unexpected number of rows - 0
-[91m[main 2024-10-24T13:44:58.406Z][0m vscode-file: Refused to load resource /tmp/.mount_cursor5iQHx9/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/tmp/.mount_cursor5iQHx9/resources/app/extensions/theme-seti/icons/seti.woff)
+[90m[main 2024-11-06T16:07:23.244Z][0m update#setState disabled
+[90m[main 2024-11-06T16:07:23.291Z][0m update#ctor - updates are disabled as there is no update URL
+[91m[main 2024-11-06T16:07:23.415Z][0m [storage state.vscdb] error checking size of src.vs.platform.reactivestorage.browser.reactiveStorageServiceImpl.persistentStorage.workspaceUser: Error: Unexpected number of rows - 0
+[91m[main 2024-11-06T16:07:26.697Z][0m vscode-file: Refused to load resource /tmp/.mount_cursorGAdz5V/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/tmp/.mount_cursorGAdz5V/resources/app/extensions/theme-seti/icons/seti.woff)
+[75148:1106/173309.722311:ERROR:atom_cache.cc(229)] Add chromium/from-privileged to kAtomsToCache
+[75148:1106/173330.209020:ERROR:atom_cache.cc(229)] Add code/file-list to kAtomsToCache
 c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
-    at ClientRequest.<anonymous> (/tmp/.mount_cursorfUnc53/resources/app/out/main.js:1:313656)
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorxNVCOx/resources/app/out/main.js:1:313656)
     at ClientRequest.emit (node:events:514:28)
     at TLSSocket.socketErrorListener (node:_http_client:495:9)
     at TLSSocket.emit (node:events:514:28)
@@ -17,45 +19,3 @@ c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/Downlo
   errno: 'ENOTFOUND',
   code: 'ENOTFOUND'
 }
-[91m[main 2024-10-24T20:25:49.133Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
-[91m[main 2024-10-24T20:25:49.133Z][0m Error: net::ERR_INTERNET_DISCONNECTED
-    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
-    at SimpleURLLoaderWrapper.emit (node:events:514:28)
-[85378:1024/222712.573712:ERROR:atom_cache.cc(229)] Add code/file-list to kAtomsToCache
-c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
-    at ClientRequest.<anonymous> (/tmp/.mount_cursorfUnc53/resources/app/out/main.js:1:313656)
-    at ClientRequest.emit (node:events:514:28)
-    at TLSSocket.socketErrorListener (node:_http_client:495:9)
-    at TLSSocket.emit (node:events:514:28)
-    at emitErrorNT (node:internal/streams/destroy:151:8)
-    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  type: 'system',
-  errno: 'ENOTFOUND',
-  code: 'ENOTFOUND'
-}
-[91m[main 2024-10-24T20:35:49.128Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
-[91m[main 2024-10-24T20:35:49.129Z][0m Error: net::ERR_INTERNET_DISCONNECTED
-    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
-    at SimpleURLLoaderWrapper.emit (node:events:514:28)
-[85378:1024/225003.697922:ERROR:atom_cache.cc(229)] Add chromium/from-privileged to kAtomsToCache
-c [FetchError]: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo ENOTFOUND api2.cursor.sh
-    at ClientRequest.<anonymous> (/tmp/.mount_cursorfUnc53/resources/app/out/main.js:1:313656)
-    at ClientRequest.emit (node:events:514:28)
-    at TLSSocket.socketErrorListener (node:_http_client:495:9)
-    at TLSSocket.emit (node:events:514:28)
-    at emitErrorNT (node:internal/streams/destroy:151:8)
-    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  type: 'system',
-  errno: 'ENOTFOUND',
-  code: 'ENOTFOUND'
-}
-[91m[main 2024-10-25T06:42:55.553Z][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
-[91m[main 2024-10-25T06:42:55.553Z][0m Error: net::ERR_INTERNET_DISCONNECTED
-    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
-    at SimpleURLLoaderWrapper.emit (node:events:514:28)
-[91m[main 2024-10-25T07:03:33.555Z][0m [uncaught exception in main]: Error: net::ERR_NAME_NOT_RESOLVED
-[91m[main 2024-10-25T07:03:33.555Z][0m Error: net::ERR_NAME_NOT_RESOLVED
-    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:109791)
-    at SimpleURLLoaderWrapper.emit (node:events:514:28)

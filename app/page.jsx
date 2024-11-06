@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from "next/link"
-import {HeadersDoubleIcons} from "./(workoutsCyrille)/components/Headers"
+import {HeadersDoubleIcons} from "./(nakedComponentParadigm)/components/Headers"
 
 const $datas = {
     links: [

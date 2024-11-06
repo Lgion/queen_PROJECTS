@@ -1,0 +1,100 @@
+header.header0 {
+    @apply bg-gradient-to-r from-orange-600 to-orange-500 text-white p-4 shadow-md;
+    >section {
+        @apply container mx-auto flex justify-between items-center;
+        >a {
+            @apply text-2xl font-bold;
+            flex-basis:30%;
+        }
+        flex-basis:90%;
+        // >div {
+            // @apply hidden md:flex items-center space-x-6;
+            
+        >nav {
+            >ul {
+                &:not(.safe){
+                    @apply hidden md:flex space-x-6;
+                }
+                &.safe{
+                    @apply flex;
+                    gap:10px;
+                    justify-content: center;
+                    >li {
+                        flex-basis: 30px;
+                    }
+                }
+                // flex-flow:wrap;
+                >li {
+                    >a {
+                        @apply hover:text-orange-200 transition duration-300;
+                        >svg {
+                            >circle {
+                            }
+                            >circle {
+                            }
+                            >path {
+                            }
+                        }
+                    }
+                    >svg {
+                        >path {
+                        }
+                        >circle {
+                        }
+                    }
+                    >form {
+                        @apply relative;
+                        >input {
+                            @apply py-1 px-3 pr-10 rounded-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-300;
+                        }
+                        >button {
+                            @apply absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-600;
+                            >svg {
+                                >circle {
+                                }
+                                >path {
+                                }
+                            }
+                        }
+                    }
+                    // &:last-child{
+                    //     @apply cursor-pointer;
+                    // }
+                }
+            }
+        }
+        // }
+        >button {
+            @media (min-width: 768px) {
+                display: none !important;
+            }
+            flex-basis:5%;
+            @apply md:hidden;
+            >svg {
+                >line {
+                }
+            }
+        }
+    }
+    >div:last-child{
+        @apply md:hidden mt-4;
+        >form {
+            @apply mb-4;
+            >input {
+                @apply w-full py-2 px-4 rounded-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-300;
+            }
+        }
+        >nav {
+            >ul {
+                @apply flex flex-col space-y-2;
+                >li {
+                    >a {
+                        &:not(.ok){@apply block py-2 hover:bg-orange-700 transition duration-300;}
+                        &.ok{@apply hover:text-orange-200;}
+                    }
+                }
+            }
+        }
+        
+    }
+}
