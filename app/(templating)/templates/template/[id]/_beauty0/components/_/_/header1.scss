@@ -1,0 +1,97 @@
+header.header1 {
+    @apply fixed w-full z-50 transition-colors duration-300;
+
+    >div.specialOffer:first-child {
+        @apply bg-rose-100 dark:bg-rose-900 px-4 py-2 text-center text-sm relative;
+        >p {@apply text-rose-800 dark:text-rose-100;}
+        >button {
+            @apply absolute right-2 top-1/2 -translate-y-1/2 text-rose-800 dark:text-rose-100;
+            >svg {}
+        }
+    }
+    
+    >section {
+        @apply container mx-auto px-4 py-3 flex items-center justify-between;
+        >a {
+        }
+        >figure {
+            @apply flex items-center space-x-2;
+            >svg {
+                @apply h-8 w-8 text-rose-600;
+            }
+            >figcaption {
+                @apply text-xl font-bold;
+            }
+        }
+        // >div {
+            
+            // >nav {
+                >ul {
+                    @apply hidden md:flex items-center space-x-8;
+                    &:not(.safe){
+                    }
+                    &.safe{
+                        >li {
+                        }
+                    }
+                    // flex-flow:wrap;
+                    >li {
+                        >a {
+                            >svg {
+                                >circle {
+                                }
+                                >circle {
+                                }
+                                >path {
+                                }
+                            }
+                        }
+                        >svg {
+                            >path {
+                            }
+                            >circle {
+                            }
+                        }
+                        >form {
+                            >input {
+                            }
+                            >button {
+                                >svg {
+                                    >circle {
+                                    }
+                                    >path {
+                                    }
+                                }
+                            }
+                        }
+                        // &:last-child{
+                        // }
+                    }
+                }
+            // }
+        // }
+        >button {
+            @media (min-width: 768px) {
+            }
+            >svg {
+                >line {
+                }
+            }
+        }
+    }
+    >div:last-child{
+        >form {
+            >input {
+            }
+        }
+        >nav {
+            >ul {
+                >li {
+                    >a {
+                    }
+                }
+            }
+        }
+        
+    }
+}

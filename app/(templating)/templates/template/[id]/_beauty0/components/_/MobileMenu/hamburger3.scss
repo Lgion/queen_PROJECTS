@@ -1,0 +1,79 @@
+.floating-menu {
+  @apply fixed inset-0 flex items-center justify-center z-50;
+
+  &__backdrop {
+    @apply absolute inset-0 bg-black/30;
+  }
+
+  &__container {
+    @apply relative w-full max-w-md mx-4 bg-white/90 backdrop-blur-lg 
+           rounded-2xl shadow-2xl overflow-hidden;
+    min-height: 60vh;
+  }
+
+  &__header {
+    @apply absolute top-4 right-4 z-10;
+  }
+
+  &__close {
+    @apply p-2 rounded-full bg-black/5 hover:bg-black/10 
+           transition-colors duration-200;
+  }
+
+  &__nav {
+    @apply p-8 space-y-4;
+  }
+
+  &__item {
+    @apply flex items-center space-x-4 p-4 rounded-xl
+           hover:bg-white/50 transition-colors duration-200;
+  }
+
+  &__icon {
+    @apply w-12 h-12 rounded-xl flex items-center justify-center
+           shadow-lg transform transition-transform duration-200;
+  }
+
+  &__label {
+    @apply text-lg font-medium text-gray-800;
+  }
+
+  &__footer {
+    @apply p-8 pt-0;
+  }
+
+  &__cta {
+    @apply w-full py-4 bg-gradient-to-r from-violet-600 to-indigo-600
+           text-white rounded-xl font-medium shadow-lg
+           transition-all duration-200;
+
+    &:hover {
+      @apply from-violet-500 to-indigo-500;
+    }
+  }
+
+  // Animation des entrées
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // Animation du hover
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+  // Effet de glassmorphism
+  &__container {
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+} 

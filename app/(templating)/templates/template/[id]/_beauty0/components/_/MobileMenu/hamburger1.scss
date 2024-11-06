@@ -1,0 +1,47 @@
+.circular-menu {
+  @apply fixed inset-0 flex items-center justify-center bg-black/50;
+  z-index: 1000;
+
+  &__container {
+    @apply relative w-[300px] h-[300px];
+  }
+
+  &__item {
+    @apply absolute transform -translate-x-1/2 -translate-y-1/2;
+  }
+
+  &__button {
+    @apply relative flex items-center justify-center w-16 h-16 rounded-full text-white cursor-pointer shadow-lg hover:shadow-xl transition-shadow;
+  }
+
+  &__icon {
+    @apply w-6 h-6;
+  }
+
+  &__label {
+    @apply absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap 
+           text-white text-sm font-medium bg-black/80 px-3 py-1 rounded-full;
+  }
+
+  &__center {
+    @apply absolute w-20 h-20 rounded-full 
+           bg-gradient-to-r from-purple-600 to-pink-600 
+           flex items-center justify-center text-white 
+           cursor-pointer shadow-lg hover:shadow-xl transition-shadow;
+    left: 140px;
+    top: 140px;
+
+    span {
+      @apply text-sm font-medium;
+    }
+  }
+}
+
+// Couleurs des boutons
+// .bg-emerald-500 { @apply bg-emerald-500; }
+// .bg-blue-500 { @apply bg-blue-500; }
+// .bg-purple-500 { @apply bg-purple-500; }
+// .bg-pink-500 { @apply bg-pink-500; }
+// .bg-yellow-500 { @apply bg-yellow-500; }
+// .bg-violet-500 { @apply bg-violet-500; }
+// .bg-indigo-500 { @apply bg-indigo-500; } 

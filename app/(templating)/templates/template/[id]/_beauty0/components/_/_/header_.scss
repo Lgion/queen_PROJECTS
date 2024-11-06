@@ -1,0 +1,75 @@
+header.header_______ {
+    >section {
+        >a {
+        }
+        // >div {
+            
+            >nav {
+                >ul {
+                    &:not(.safe){
+                    }
+                    &.safe{
+                        >li {
+                        }
+                    }
+                    // flex-flow:wrap;
+                    >li {
+                        >a {
+                            >svg {
+                                >circle {
+                                }
+                                >circle {
+                                }
+                                >path {
+                                }
+                            }
+                        }
+                        >svg {
+                            >path {
+                            }
+                            >circle {
+                            }
+                        }
+                        >form {
+                            >input {
+                            }
+                            >button {
+                                >svg {
+                                    >circle {
+                                    }
+                                    >path {
+                                    }
+                                }
+                            }
+                        }
+                        // &:last-child{
+                        // }
+                    }
+                }
+            }
+        // }
+        >button {
+            @media (min-width: 768px) {
+            }
+            >svg {
+                >line {
+                }
+            }
+        }
+    }
+    >div:last-child{
+        >form {
+            >input {
+            }
+        }
+        >nav {
+            >ul {
+                >li {
+                    >a {
+                    }
+                }
+            }
+        }
+        
+    }
+}
